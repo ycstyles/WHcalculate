@@ -9,12 +9,12 @@
 </head>
 
 <body>
-    <h1 id=display>당신의 표준체중을 알아보세요.</h1>
+    <h1 id="display">당신의 표준체중을 알아보세요.</h1>
     <input type="text" id="weight" placeholder="당신의 체중을 알려주세요">kg
     <input type="text" id="height" placeholder="당신의 키을 알려주세요">cm
     <br><button id="action">계산하기</button>
 
- <!-- html주선은 화살표 -->>
+ <!-- html주선은 화살표 -->
     <script>
         // 변수와 함수
         // variable and function
@@ -26,10 +26,10 @@
 
     function standardWeight(weight, height){
         var standardWeight = (height - 100) *0.9;
-        var dietWeight = weight - standardweight;
-        var fatRate = weight / standardWeight)*10;
-        var Text = "당신의 표준체중은" + StandardWeight + " kg입니다. 따라서 당신은 " + DietWeight + " kg를 감량해야 합니다." + "현재 비만도는" +fatRate " %입니다";
-        displsy.innerHTML = Text;
+        var dietWeight = weight - standardWeight;
+        var fatRate = (weight / standardWeight)*10;
+        var Text = "당신의 표준체중은" + standardWeight + " kg입니다. 따라서 당신은 " + dietWeight + " kg를 감량해야 합니다." + "현재 비만도는" + fatRate + "%입니다";
+        display.innerHTML = Text;
 }
 
     </script>
